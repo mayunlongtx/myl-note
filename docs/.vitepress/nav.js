@@ -1,6 +1,35 @@
 const nav = [
   {
-    text: "学习笔记",
+    text: "键盘侠养成记",
+    items: [
+      {
+        text: "Vim",
+        link: "/pages/vim/knowVim",
+        // items: [
+        //   {
+        //     text: "认识Vim",
+        //     link: "/pages/vim/knowVim",
+        //   },
+        //   {
+        //     text: "命令",
+        //     link: "/pages/vim/command",
+        //   },
+        // ],
+      },
+      {
+        text: "Vscode",
+        // link: "/pages/vim/knowVim",
+        items: [
+          {
+            text: "认识Vim",
+            link: "/pages/vim/knowVim",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    text: "面试",
     items: [
       {
         text: "html",

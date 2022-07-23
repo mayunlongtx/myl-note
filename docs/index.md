@@ -1,3 +1,5 @@
+:hatching_chick:
+
 ---
 home: true
 heroImage: /hero.png
