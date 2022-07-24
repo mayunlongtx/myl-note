@@ -4,7 +4,7 @@ import sidebar from "./sidebar";
  * @type {import('vitepress').UserConfig}
  */
 const config = {
-  title: "mayunlongtx",
+  title: " 🐣 mayunlongtx",
   description: "龙宝的笔记",
   themeConfig: {
     // siteTitle: "mayunlongtx",
