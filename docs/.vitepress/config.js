@@ -6,6 +6,7 @@ import sidebar from "./sidebar";
 const config = {
   title: " 🐣 mayunlongtx",
   description: "龙宝的笔记",
+  base: '/dist/',
   themeConfig: {
     // siteTitle: "mayunlongtx",
     outlineTitle: "目录",
@@ -31,7 +32,9 @@ const config = {
       next: "下一篇",
     },
     nav,
-    socialLinks: [{ icon: "github", link: "https://github.com/mayunlongtx" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/mayunlongtx/vitepress-test" },
+    ],
     sidebar,
   },
   markdown: {

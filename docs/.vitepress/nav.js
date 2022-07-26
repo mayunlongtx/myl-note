@@ -49,11 +49,19 @@ const nav = [
     text: "我的平台",
     items: [
       {
-        text: "github",
+        text: "Github",
         link: "https://github.com/mayunlongtx",
-        icon: {
-          svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>',
-        },
+      },
+      {
+        text: "掘金",
+        link: "https://juejin.cn/user/2524134428904894/posts",
+        // icon: {
+        //   svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>',
+        // },
+      },
+      {
+        text: "CSDN",
+        link: "https://blog.csdn.net/M_J_BlackCloud?spm=1010.2135.3001.5343",
       },
     ],
   },
