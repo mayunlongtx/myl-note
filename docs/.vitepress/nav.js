@@ -29,7 +29,7 @@ const nav = [
     ],
   },
   {
-    text: "面试",
+    text: "面试题",
     items: [
       {
         text: "html",
