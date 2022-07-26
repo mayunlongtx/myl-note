@@ -32,7 +32,7 @@ jobs:
         with:
             node-version:  ${{ matrix.node }}
       # Runs a single command using the runners shell
-      	# 执行安装
+      # 执行安装
       - name: Install dependencies
         run: npm install
         # 执行打包
