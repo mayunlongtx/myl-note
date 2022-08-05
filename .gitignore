@@ -1,6 +1,7 @@
 /node_modules
 /demo
 /build
+/docs/.vitepress/dist
 # local env files
 .env.local
 .env.*.local
