@@ -6,9 +6,8 @@ name: pushDocs
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: 
+      - master
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -47,7 +46,8 @@ jobs:
           git config user.name "mayunlongtx"
           git config user.email "${{ secrets.GIT_EMAIL }}"
           git add .
-          git commit -m 'deploy'
-          git branch -m 'main'
-          git push -f git://mayunlongtx:${{ secrets.ACCESS_TOKEN }}@github.com/mayunlongtx/vitepress-test.git main:gh-pages
+          # git commit -m 'deploy'
+          # git branch -m 'main'
+          git commit -m "Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")"
+          git push -f git://mayunlongtx:${{ secrets.ACCESS_TOKEN }}@github.com/mayunlongtx/blog.git master:gh-pages
           cd -

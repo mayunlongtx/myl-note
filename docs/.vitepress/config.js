@@ -6,7 +6,7 @@ import sidebar from "./sidebar";
 const config = {
   title: " 🐣 mayunlongtx",
   description: "龙宝的笔记",
-  base: '/dist/',
+  base: '/blog/',
   themeConfig: {
     // siteTitle: "mayunlongtx",
     outlineTitle: "目录",
@@ -22,6 +22,7 @@ const config = {
     // },
     // siteTitle: false,
     // lastUpdated: true,
+    lastUpdated: '最后更新',
     lastUpdatedText: "最后更新", // 最后更新时间文本, 需配置 lastUpdated 为 true
     // carbonAds: {
     //   code: "your-carbon-code",
