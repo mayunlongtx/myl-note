@@ -49,5 +49,5 @@ jobs:
           # git commit -m 'deploy'
           # git branch -m 'main'
           git commit -m "Deploying to gh-pages from @ $GITHUB_SHA in $(date +"%Y年%m月%d日 %T %Z")"
-          git push -f git://mayunlongtx:${{ secrets.ACCESS_TOKEN }}@github.com/mayunlongtx/blog.git master:gh-pages
+          git push -f https://mayunlongtx:${{ secrets.ACCESS_TOKEN }}@github.com/mayunlongtx/blog.git master:gh-pages
           cd -
