@@ -6,7 +6,7 @@ import sidebar from "./sidebar";
 const config = {
   title: " 🐣 mayunlongtx",
   description: "龙宝的笔记",
-  base: '/blog/',
+  base: '/vitepress-test/',
   themeConfig: {
     // siteTitle: "mayunlongtx",
     outlineTitle: "目录",
