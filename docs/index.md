@@ -11,6 +11,9 @@ hero:
     - theme: brand
       text: Vim
       link: /pages/vim/knowVim
+    - theme: brand
+      text: Tool
+      link: /pages/tools/index
     # - theme: alt
     #   text: GitHub
     #   link: https://github.com/vuejs/vitepress
