@@ -226,4 +226,3 @@ npm login --registry http://localhost:4873
 ```yaml
 npm publish --registry http://localhost:4873
 ```
-![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/20221015141527.png)
