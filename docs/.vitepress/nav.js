@@ -48,21 +48,38 @@ const nav = [
   {
     text: "笔记 📔",
     items: [
-      // {
-      //   text: "npm 相关",
-      //   link: "/pages/notes/index",
-      
-      // },
+      {
+        text: "node",
+        // link: "/pages/notes/index",
+        items: [
+          {
+            text: "Pm2",
+            link: "/pages/notes/node/pm2",
+          },
+          // {
+          //   text: "包发布",
+          //   link: "/pages/notes/npm/packagePublish",
+          // },
+          // {
+          //   text: "nrm",
+          //   link: "/pages/notes/npm/nrm",
+          // },
+        ],
+      },
       {
         text: "npm",
         items: [
           {
             text: "私有化",
-            link: "/pages/notes/privateNpm",
+            link: "/pages/notes/npm/privateNpm",
           },
           {
             text: "包发布",
-            link: "/pages/notes/packagePublish",
+            link: "/pages/notes/npm/packagePublish",
+          },
+          {
+            text: "nrm",
+            link: "/pages/notes/npm/nrm",
           },
         ],
       },

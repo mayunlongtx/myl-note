@@ -38,9 +38,16 @@
 
 这里我们选择使用 `Verdaccio`,因为 `Verdaccio` 构建成本比较低，后期也好维护.
 ### 常用的仓库地址
+- npm —— https://registry.npmjs.org
+- cnpm —— http://r.cnpmjs.org
+- taobao —— https://registry.npm.taobao.org
+- nj —— https://registry.nodejitsu.com
+- rednpm —— http://registry.mirror.cqupt.edu.cn
+- npmMirror —— https://skimdb.npmjs.com/registry
+- edunpm —— http://registry.enpmjs.org
 
-- [npm](https://www.npmjs.com/)
-- [cnpm](https://npmmirror.com/)
+<!-- #- [npm](https://registry.npmjs.org)
+#- [cnpm](http://r.cnpmjs.org) -->
 
 ### Verdaccio 框架
 
@@ -73,146 +80,150 @@ Verdaccio 将根据 Node. js 发布工作组 的推荐支持最新的 Node. js �
 
 ### npm 方式安装
 1. Nodejs 环境下全局安装 verdaccio.
-  ```yaml
-	vim /root/.config/verdaccio/config.yaml
-	```
+```yaml
+vim /root/.config/verdaccio/config.yaml
+```
 - 加上 -–unsafe-perm 的原因是防止报 grywarn 权限的错。
 2. 修改配置文件
 - verdaccio 的特点是，你在哪个目录运行，它的就会在对应的目录下创建自己的文件。目录下默认有两个文件：config.yaml 和 storage，htpasswd 是添加用户之后自动创建的。
 - 打开默认启动的 config.yaml 文件：
-
-	```yaml
-	vim /root/.config/verdaccio/config.yaml
-	```
+```yaml
+vim /root/.config/verdaccio/config.yaml
+```
 	
-	```yaml
-	auth:
-		htpasswd:
-			file: ./htpasswd
-			# Maximum amount of users allowed to register, defaults to "+inf".
-			# You can set this to -1 to disable registration.
-			max_users: -1
-	uplinks:
-		npmjs:
-			url: https://registry.npmjs.org/
-		cnpm:
-			url: https://registry.npm.taobao.org
-	packages:
-		"@aemp/*":
-			access: $authenticated
-			publish: $authenticated
-			unpublish: $authenticated
-		"@*/*":
-			access: $all
-			publish: $authenticated
-			unpublish: $authenticated
-			proxy: npm
-		"**":
-			access: $all
-			publish: $authenticated
-			unpublish: $authenticated
-			proxy: npm
-	
-	```
+```yaml
+auth:
+	htpasswd:
+		file: ./htpasswd
+		# Maximum amount of users allowed to register, defaults to "+inf".
+		# You can set this to -1 to disable registration.
+		max_users: -1
+uplinks:
+	npmjs:
+		url: https://registry.npmjs.org/
+	cnpm:
+		url: https://registry.npm.taobao.org
+packages:
+		@aemp/*":
+		access: $authenticated
+		publish: $authenticated
+		unpublish: $authenticated
+	"@*/*":
+		access: $all
+		publish: $authenticated
+		unpublish: $authenticated
+		proxy: npm
+	"**":
+		access: $all
+		publish: $authenticated
+		unpublish: $authenticated
+		proxy: npm
+```
 - access 是访问权限控制，总共有三种身份：所有人($all)、匿名用户($anonymous)、认证(登陆)用户($authenticated)。
 
 3. 对外开放 4873 端口
 - verdaccio 继承了 sinopia，端口号 4873 依然不变。
-	```yaml
-	firewall-cmd --state                 # 先查看防火墙状态，
-	service firewalld start              # 开启防火墙:
-	firewall-cmd --zone=public --add-port=4873/tcp –permanent  # 开放4873端口
-	firewall-cmd --reload                # 重新载入
-	firewall-cmd --zone=public --query-port=4873/tcp    # 查看是否添加成功
-	```
+```yaml
+firewall-cmd --state                 # 先查看防火墙状态，
+service firewalld start              # 开启防火墙:
+firewall-cmd --zone=public --add-port=4873/tcp –permanent  # 开放4873端口
+firewall-cmd --reload                # 重新载入
+firewall-cmd --zone=public --query-port=4873/tcp    # 查看是否添加成功
+```
 4. 启动 verdaccio
-	```yaml
-	verdaccio
-	```
+```yaml
+verdaccio
+```
 5. pm2 守护 verdaccio 进程
-- 安装 pm2：
-  ```yaml
-  npm install -g pm2 --unsafe-perm
-  ```
+- 安装 [pm2](../node/pm2.md)：
+```yaml
+npm install -g pm2 --unsafe-perm
+```
 - 使用 pm2 启动 verdaccio：
-  ```yaml
-  pm2 start “which verdaccio”
-  ```
+```yaml
+pm2 start “which verdaccio”
+```
 - 可以看到下边这样的内容,就说明已经启动成功了
 ![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/20221015140507.png)
 - 查看 pm2 守护下的进程 verdaccio 的实时日志：
-	```yaml
-  pm2 show verdaccio
-  ```
+```yaml
+pm2 show verdaccio
+```
   
 ### Docker 方式安装
 1. 拉取 Verdaccio 的 docker 镜像
 
-	```yaml
-	docker pull verdaccio/verdaccio
-	```
+```yaml
+docker pull verdaccio/verdaccio
+```
 
 2. 在根目录下创建 docker 文件
 
-	```yaml
-	mkdir -p ~/docker/data
-	cd ~/docker/data
-	```
+```yaml
+mkdir -p ~/docker/data
+cd ~/docker/data
+```
 	
 3. 从 git 拉取示例到 data 到目录下
 
-	```yaml
-	git clone https://github.com/verdaccio/docker-examples
-	cd ~/docker/data/docker-examples
-	```
+```yaml
+git clone https://github.com/verdaccio/docker-examples
+cd ~/docker/data/docker-examples
+```
 	
 4. 移动配置文件
 
-	```yaml
-	mv docker-local-storage-volume ~/docker/verdaccio
-	```
+```yaml
+mv docker-local-storage-volume ~/docker/verdaccio
+```
 	
 5. 设置文件夹权限
 
-	```yaml
-	chown -R 100:101 ~/docker/verdaccio
-	```
+```yaml
+chown -R 100:101 ~/docker/verdaccio
+```
 	
 6. 启动镜像
  - 使用 docker-compose 启动:
-	```yaml
-	cd ~/docker/verdaccio
-	docker-compose build
-	docker-compose up
-	```
+```yaml
+cd ~/docker/verdaccio
+docker-compose build
+docker-compose up
+```
 - 或者使用 docker run 命令启动:
-	```yaml
-	V_PATH=~/docker/verdaccio; docker run -it --rm --name verdaccio \
-	-p 4873:4873 \
-	-v $V_PATH/conf:/verdaccio/conf \
-	-v $V_PATH/storage:/verdaccio/storage \
-	-v $V_PATH/plugins:/verdaccio/plugins \
-	```
+```yaml
+V_PATH=~/docker/verdaccio; docker run -it --rm --name verdaccio \
+-p 4873:4873 \
+-v $V_PATH/conf:/verdaccio/conf \
+-v $V_PATH/storage:/verdaccio/storage \
+-v $V_PATH/plugins:/verdaccio/plugins \
+```
 - 打开 http://localhost:4873 就可以看到已经启动起来了
 ![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/verdaccio-docker.4f5f3a9a.png)
 
 ## 用户管理
-- 1.设置仓库源(建议使用nrm控制)
-	```yaml
-	npm set registry http://localhost:4873
-	```
+- 1.设置仓库源
+::: tip
+建议使用 [nrm](./nrm.md) 控制
+:::
+```yaml
+npm set registry http://localhost:4873
+```
 - 2.添加用户
-	```yaml
-	// 输入 username、password 以及 Email 即可
-	npm adduser --registry http://localhost:4873
-	```
+```yaml
+#输入 username、password 以及 Email 即可
+npm adduser --registry http://localhost:4873
+```
 ## 私有包管理
+::: tip
+也可以参考 [npm 包发布](./packagePublish.md)
+:::
 - 1. 登录
-	```yaml
-	npm login --registry http://localhost:4873
-	```
+```yaml
+npm login --registry http://localhost:4873
+```
 - 2. 上传私有包
-	```yaml
-	npm publish --registry http://localhost:4873
-	```
+```yaml
+npm publish --registry http://localhost:4873
+```
 ![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/20221015141527.png)

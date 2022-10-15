@@ -34,7 +34,8 @@ const config = {
     },
     nav,
     socialLinks: [
-      { icon: "github", link: "https://github.com/mayunlongtx/vitepress-test" },
+      // pm2 start all
+      { icon: "github", link: "https://github.com/mayunlongtx/" },
     ],
     sidebar,
   },
