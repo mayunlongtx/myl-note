@@ -39,7 +39,7 @@ const sidebar = {
       items: [
         // This shows `/learning/index.md` page.
         // { text: "Index", link: "/pages/learning/" },
-        { text: "npm私有化", link: "/pages/notes/npm/packagePublish" },
+        { text: "npm私有化", link: "/pages/notes/npm/privateNpm" },
         { text: "npm包发布", link: "/pages/notes/npm/packagePublish" },
         { text: "nrm", link: "/pages/notes/npm/nrm" },
       ],
