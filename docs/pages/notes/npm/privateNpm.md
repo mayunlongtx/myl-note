@@ -198,21 +198,24 @@ V_PATH=~/docker/verdaccio; docker run -it --rm --name verdaccio \
 -v $V_PATH/storage:/verdaccio/storage \
 -v $V_PATH/plugins:/verdaccio/plugins \
 ```
-- 打开 http://localhost:4873 就可以看到已经启动起来了
-![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/verdaccio-docker.4f5f3a9a.png)
+- 打开 'http:ip//:4873' 就可以看到已经启动起来了
 
+![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/verdaccio-docker.4f5f3a9a.png)
+::: tip
+ 本地可以将 ip  换成  localhost
+:::
 ## 用户管理
 - 1.设置仓库源
 ::: tip
 建议使用 [nrm](./nrm.md) 控制
 :::
 ```yaml
-npm set registry http://localhost:4873
+npm set registry http://ip:4873
 ```
 - 2.添加用户
 ```yaml
 #输入 username、password 以及 Email 即可
-npm adduser --registry http://localhost:4873
+npm adduser --registry http://ip:4873
 ```
 ## 私有包管理
 ::: tip
@@ -220,9 +223,9 @@ npm adduser --registry http://localhost:4873
 :::
 - 1. 登录
 ```yaml
-npm login --registry http://localhost:4873
+npm login --registry http://ip:4873
 ```
 - 2. 上传私有包
 ```yaml
-npm publish --registry http://localhost:4873
+npm publish --registry http://ip:4873
 ```
