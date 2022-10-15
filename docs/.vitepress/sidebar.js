@@ -16,18 +16,12 @@ const sidebar = {
     {
       text: "Tool",
       collapsible: true,
-      items: [
-        // This shows `/learning/index.md` page.
-        // { text: "Index", link: "/pages/vim/" },
-        { text: "工具地址", link: "/pages/tools/index" },
-        // { text: "行相关命令", link: "/pages/vim/commandLine" },
-        // { text: "语法", link: "/pages/vim/grammar" },
-      ],
+      items: [{ text: "工具地址", link: "/pages/tools/index" }],
     },
   ],
   "/pages/learning/": [
     {
-      text: "学习笔记",
+      text: "面试题",
       collapsible: true,
       items: [
         // This shows `/learning/index.md` page.
@@ -37,6 +31,31 @@ const sidebar = {
         { text: "VUE", link: "/pages/learning/vue" },
       ],
     },
+  ],
+  "/pages/notes/": [
+    {
+      text: "npm",
+      collapsible: true,
+      items: [
+        // This shows `/learning/index.md` page.
+        // { text: "Index", link: "/pages/learning/" },
+        { text: "npm私有化", link: "/pages/notes/npm/packagePublish" },
+        { text: "npm包发布", link: "/pages/notes/npm/packagePublish" },
+        { text: "nrm", link: "/pages/notes/npm/nrm" },
+      ],
+    },
+    {
+      text: "node",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: "pm2",
+          link: "/pages/notes/node/pm2",
+        },
+      ],
+    },
+   
   ],
 };
 

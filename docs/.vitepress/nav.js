@@ -49,24 +49,6 @@ const nav = [
     text: "笔记 📔",
     items: [
       {
-        text: "node",
-        // link: "/pages/notes/index",
-        items: [
-          {
-            text: "Pm2",
-            link: "/pages/notes/node/pm2",
-          },
-          // {
-          //   text: "包发布",
-          //   link: "/pages/notes/npm/packagePublish",
-          // },
-          // {
-          //   text: "nrm",
-          //   link: "/pages/notes/npm/nrm",
-          // },
-        ],
-      },
-      {
         text: "npm",
         items: [
           {
@@ -80,6 +62,15 @@ const nav = [
           {
             text: "nrm",
             link: "/pages/notes/npm/nrm",
+          },
+        ],
+      },
+      {
+        text: "node",
+        items: [
+          {
+            text: "Pm2",
+            link: "/pages/notes/node/pm2",
           },
         ],
       },
