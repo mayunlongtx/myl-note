@@ -29,7 +29,7 @@ const nav = [
     ],
   },
   {
-    text: "面试题",
+    text: "面试题 📋 ",
     items: [
       {
         text: "html",
@@ -42,6 +42,29 @@ const nav = [
       {
         text: "vue",
         link: "/pages/learning/vue",
+      },
+    ],
+  },
+  {
+    text: "笔记 📔",
+    items: [
+      // {
+      //   text: "npm 相关",
+      //   link: "/pages/notes/index",
+      
+      // },
+      {
+        text: "npm",
+        items: [
+          {
+            text: "私有化",
+            link: "/pages/notes/privateNpm",
+          },
+          {
+            text: "包发布",
+            link: "/pages/notes/packagePublish",
+          },
+        ],
       },
     ],
   },

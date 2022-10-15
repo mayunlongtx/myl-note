@@ -25,9 +25,12 @@ features:
   - title: 面试笔记
     details: 记录自己碰到的面试题，以及平时看到的面试题.
     icon: 📚
-  - title: 学习记录
-    details: 日常学习记录.
+  - title: 个人笔记
+    details: 常见问题、日常学习记录.
     icon: 📓
+ # - title: 个人笔记
+  #  details: 常见问题、日常
+   # icon: 📔
   # - title: Fully static yet still dynamic
   #   details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
 aside: false
