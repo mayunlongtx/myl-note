@@ -52,6 +52,10 @@ const nav = [
         text: "npm",
         items: [
           {
+            text: "常用命令",
+            link: "/pages/notes/npm/npmCommand",
+          },
+          {
             text: "私有化",
             link: "/pages/notes/npm/privateNpm",
           },
@@ -62,10 +66,6 @@ const nav = [
           {
             text: "nrm",
             link: "/pages/notes/npm/nrm",
-          },
-          {
-            text: "nvm 常用命令",
-            link: "/pages/notes/npm/nvm",
           },
         ],
       },
