@@ -1,6 +1,8 @@
 # npm 包发布过程
 
-
+::: tip
+[npm 常用命令](./npmCommand.md)
+:::
 ## 账号
 - 前往 [npm](https://www.npmjs.com/) 官网创建自己的账号
 - 私有包可以查看[用户管理](./privateNpm.md#用户管理)

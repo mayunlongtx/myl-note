@@ -63,6 +63,10 @@ const nav = [
             text: "nrm",
             link: "/pages/notes/npm/nrm",
           },
+          {
+            text: "nvm 常用命令",
+            link: "/pages/notes/npm/nvm",
+          },
         ],
       },
       {
