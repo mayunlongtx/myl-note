@@ -78,6 +78,15 @@ const nav = [
           },
         ],
       },
+      {
+        text: "小程序",
+        items: [
+          {
+            text: "开发问题",
+            link: "/pages/applet/issue",
+          },
+        ],
+      },
     ],
   },
   {

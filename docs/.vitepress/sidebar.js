@@ -58,6 +58,15 @@ const sidebar = {
     },
    
   ],
+  "/pages/applet/": [
+    {
+      text: "小程序",
+      collapsible: true,
+      items: [
+        { text: "问题", link: "/pages/applet/issue" },
+      ],
+    },
+  ],
 };
 
 export default sidebar;
