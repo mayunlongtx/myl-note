@@ -164,5 +164,5 @@ Page({
 
 ::: tip 参考文档
 
-[源码地址](https://github.com/mayunlongtx/add-tips)
+[源码地址](https://github.com/mayunlongtx/applet-add-tips)
 :::
