@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,d as l}from"./app.0c40e341.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/notes/npm/npmCommand.md"}'),p={name:"pages/notes/npm/npmCommand.md"},e=l("",1),c=[e];function o(r,t,i,m,b,y){return a(),n("div",null,c)}var A=s(p,[["render",o]]);export{C as __pageData,A as default};
