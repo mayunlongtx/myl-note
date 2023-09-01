@@ -32,7 +32,7 @@ Page({
 
 假如需要获生成的`DOM`可以参考官方的文档
 
-​ 相关文档： [wx.createSelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/wx.createSelectorQuery.html) 、[获取界面上的节点信息](https://developers.weixin.qq.com/miniprogram/dev/framework/view/selector.html)
+ 相关文档： [wx.createSelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/wx.createSelectorQuery.html) 、[获取界面上的节点信息](https://developers.weixin.qq.com/miniprogram/dev/framework/view/selector.html)
 
 我感觉不是很方便，所以去搜了一下插件，找到了 [mp-html](https://jin-yufeng.gitee.io/mp-html/#/overview/feature)
 
@@ -164,5 +164,5 @@ Page({
 
 ::: tip 参考文档
 
-[源码地址](https://github.com/mayunlongtx/applet-add-tips)
+[源码地址](https://github.com/mayunlongtx/add-tips)
 :::
