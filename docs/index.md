@@ -19,6 +19,9 @@ hero:
     #   link: https://github.com/vuejs/vitepress
 
 features:
+  # - title: "技术类学习"
+  #   details: 包含Vim、vscode、Chrome等插件以及键盘操作.
+  #   icon: 🎉
   - title: "键盘侠养成记"
     details: 包含Vim、vscode、Chrome等插件以及键盘操作.
     icon: 🎉

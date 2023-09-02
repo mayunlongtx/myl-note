@@ -56,14 +56,33 @@ const sidebar = {
         },
       ],
     },
+    {
+      text: "问题",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: "小程序",
+          link: "/pages/notes/applet/issue",
+        },
+      ],
+    },
    
   ],
-  "/pages/applet/": [
+  "/pages/test/": [
     {
-      text: "小程序",
+      text: "基础",
       collapsible: true,
       items: [
-        { text: "问题", link: "/pages/applet/issue" },
+        { text: "为什么写测试", link: "/pages/test/basic/whyWriteTest" },
+        { text: "单元测试在修改代码时的好处", link: "/pages/test/basic/editCodeAdvantage" },
+      ],
+    },
+    {
+      text: "Vue-项目实战",
+      collapsible: true,
+      items: [
+        { text: "项目概述", link: "/pages/test/actualCombat/Vue/index" },
       ],
     },
   ],

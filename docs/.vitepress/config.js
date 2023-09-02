@@ -7,6 +7,10 @@ const config = {
   title: " 🐣 mayunlongtx",
   description: "龙宝的笔记",
   base: '/',
+  head: [
+    ['link', { rel: 'icon', href: './public/favicon.ico' }]
+  ],
+  siteTitle: 'Hello World',
   themeConfig: {
     // siteTitle: "mayunlongtx",
     outlineTitle: "目录",
