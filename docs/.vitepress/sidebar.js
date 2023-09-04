@@ -1,3 +1,7 @@
+import {getSidebarList} from './generateSidebar'
+console.log(getSidebarList(), 'getSidebarList()');
+
+
 const sidebar = {
   "/pages/vim/": [
     {
@@ -76,6 +80,7 @@ const sidebar = {
       items: [
         { text: "为什么写测试", link: "/pages/test/basic/whyWriteTest" },
         { text: "单元测试在修改代码时的好处", link: "/pages/test/basic/editCodeAdvantage" },
+        { text: "单元测试的其他好处", link: "/pages/test/basic/otherAdvantage" },
       ],
     },
     {
