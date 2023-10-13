@@ -87,7 +87,7 @@ const sidebar = {
       text: "Vue-项目实战",
       collapsible: true,
       items: [
-        { text: "项目概述", link: "/pages/test/actualCombat/Vue/index" },
+        { text: "项目概述", link: "/pages/test/actualCombatVue/index" },
       ],
     },
   ],

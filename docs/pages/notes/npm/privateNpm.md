@@ -6,7 +6,7 @@
 
 ## npm 私有仓库
 
-### npm 私有仓库的好处
+## npm 私有仓库的好处
 
 - 1.安全性角度的考虑：安全性(布署在内网，资产安全性高)
 - 2.开发效率角度的考虑：复用性，开发效率，版本管理(立足之根本)
@@ -15,21 +15,21 @@
 - 5.版本角度的考虑：相当于一个容器，统一管理需要的包，保持版本的唯一
 - 6.开发效率角度考虑：使私有公共业务或组件模块能以共有包一样的管理组织方式，保持一致性，提高开发效率.
 
-### npm 私有仓库的原理
+## npm 私有仓库的原理
 
 ![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/20221015124053.png)
 
 - 用户 `install` 后向私有 `npm` 发起请求，服务器会先查询所请求的这个模块是否是我们自己的私有模块或已经缓存过的公共模块，如果是则直接返回给用户；如果请求的是一个还没有被缓存的公共模块，那么则会向上游源请求模块并进行缓存后返回给用户。上游的源可以是 `npm` 仓库，也可以是淘宝镜像。
 
-### npm 私有仓库选型
+## npm 私有仓库选型
 
-#### 搭建方式
+### 搭建方式
 
 - 付费购买 npm 企业私有仓库
 - 使用 git + ssh 这种方式直接引用到 GitHub 项目地址
 - 开源代码源代码方式或者 docker 化构建
 
-#### 常用私有 npm 
+### 常用私有 npm 
 
 - Npm 付费服务
 - [Sinopia](https://github.com/rlidwka/sinopia)  --- 不再维护
@@ -37,7 +37,7 @@
 - [cnpm](https://npmmirror.com/) 
 
 这里我们选择使用 `Verdaccio`,因为 `Verdaccio` 构建成本比较低，后期也好维护.
-### 常用的仓库地址
+## 常用的仓库地址
 - npm —— https://registry.npmjs.org
 - cnpm —— http://r.cnpmjs.org
 - taobao —— https://registry.npm.taobao.org
@@ -49,7 +49,7 @@
 <!-- #- [npm](https://registry.npmjs.org)
 #- [cnpm](http://r.cnpmjs.org) -->
 
-### Verdaccio 框架
+## Verdaccio 框架
 
 - `Verdaccio`  是一个 Node.js创建的轻量的私有npm proxy registry
 - 基于 `Node.js` 的网页应用程序
@@ -68,7 +68,7 @@
 
 ![](https://raw.githubusercontent.com/mayunlongtx/my-drawing-bed/main/marldown-img/20221015142604.png)
 
-### 最低要求
+## 最低要求
 - Node.js v12 或更高.(建议使用nvm做版本控制)
 
 - 你喜爱的Node包管理器 npm，pnpm 或 yarn(classic 以及 berry)。
@@ -78,7 +78,7 @@
 - 使用现代浏览器以访问Web界面， 支持使用 Chrome、 Firefox、 Edge和IE11 浏览器。
 Verdaccio 将根据 Node. js 发布工作组 的推荐支持最新的 Node. js 版本。
 
-### npm 方式安装
+## npm 方式安装
 1. Nodejs 环境下全局安装 verdaccio.
 ```yaml
 vim /root/.config/verdaccio/config.yaml
@@ -150,7 +150,7 @@ pm2 start “which verdaccio”
 pm2 show verdaccio
 ```
   
-### Docker 方式安装
+## Docker 方式安装
 1. 拉取 Verdaccio 的 docker 镜像
 
 ```yaml

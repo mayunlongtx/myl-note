@@ -2,7 +2,7 @@
 
 ## 富文本
 
-### 使用微信 [rich-text](https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html)
+## 使用微信 [rich-text](https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html)
 
 ::: details 效果
 
@@ -38,7 +38,7 @@ Page({
 
 :::
 
-### 使用 `mp-html`
+## 使用 `mp-html`
 
 ::: details 效果
 
@@ -88,7 +88,7 @@ Page({
 
 :::
 
-### 自定义分享
+## 自定义分享
 
 ::: details 效果
 
