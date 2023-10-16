@@ -81,6 +81,7 @@ const sidebar = {
         { text: "为什么写测试", link: "/pages/test/basic/whyWriteTest" },
         { text: "单元测试在修改代码时的好处", link: "/pages/test/basic/editCodeAdvantage" },
         { text: "单元测试的其他好处", link: "/pages/test/basic/otherAdvantage" },
+        { text: "自动化思维-功能验证", link: "/pages/test/basic/automate" },
       ],
     },
     {
