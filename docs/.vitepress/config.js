@@ -4,7 +4,7 @@ import sidebar from "./sidebar";
  * @type {import('vitepress').UserConfig}
  */
 const config = {
-  title: " 🐣 mayunlongtx",
+  title: " 🐣 myltx",
   description: "龙宝的笔记",
   base: '/',
   head: [
@@ -12,11 +12,11 @@ const config = {
   ],
   siteTitle: 'Hello World',
   themeConfig: {
-    // siteTitle: "mayunlongtx",
+    // siteTitle: "myltx",
     outlineTitle: "目录",
     // logo: "/public/logo.jpg",
     footer: {
-      message: "mayunlongtx",
+      message: "myltx",
       copyright: "学习笔记",
     },
     // 跳转一个编辑地址

@@ -1,19 +1,24 @@
 ---
 layout: home
 
-title: mayunlongtx
+title: myltx
 lastUpdated: true
 hero:
-  name: 🐣 mayunlongtx 
+  name: 🐣 myltx 
   text: 学习笔记 
+  image:
+        # 首页右边的图片
+        src: /avatar.png
+        # 图片的描述
+        alt: avatar
   # tagline: 日常学习记录
   actions:
+    # - theme: brand
+    #   text: 进入首页
+    #   link: /pages/tools/index
     - theme: brand
-      text: Vim
-      link: /pages/vim/knowVim
-    - theme: brand
-      text: Tool
-      link: /pages/tools/index
+      text: 测试课
+      link: /pages/test/index
     # - theme: alt
     #   text: GitHub
     #   link: https://github.com/vuejs/vitepress

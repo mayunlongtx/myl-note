@@ -7,10 +7,10 @@ const nav = [
     text: "面试题 📋 ",
     link: "/pages/learning/html",
   },
-  {
-    text: "测试课 📔",
-    link: "/pages/test/",
-  },
+  // {
+  //   text: "测试课 📔",
+  //   link: "/pages/test/",
+  // },
   {
     text: "笔记 📔",
     link: "/pages/notes/npm/npmCommand",

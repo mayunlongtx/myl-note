@@ -23,13 +23,13 @@
 
 ## npm 私有仓库选型
 
-### 搭建方式
+## 搭建方式
 
 - 付费购买 npm 企业私有仓库
 - 使用 git + ssh 这种方式直接引用到 GitHub 项目地址
 - 开源代码源代码方式或者 docker 化构建
 
-### 常用私有 npm 
+## 常用私有 npm 
 
 - Npm 付费服务
 - [Sinopia](https://github.com/rlidwka/sinopia)  --- 不再维护

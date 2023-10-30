@@ -75,13 +75,26 @@ const sidebar = {
   ],
   "/pages/test/": [
     {
-      text: "基础",
+      text: "单元测试基础知识",
       collapsible: true,
       items: [
         { text: "为什么写测试", link: "/pages/test/basic/whyWriteTest" },
         { text: "单元测试在修改代码时的好处", link: "/pages/test/basic/editCodeAdvantage" },
         { text: "单元测试的其他好处", link: "/pages/test/basic/otherAdvantage" },
         { text: "自动化思维-功能验证", link: "/pages/test/basic/automate" },
+        { text: "单元级别的功能测试", link: "/pages/test/basic/unitLevelTest" },
+        { text: "什么时候写测试", link: "/pages/test/basic/whatTimeWriteTest" },
+      ],
+    },
+    {
+      text: "初始Vitest",
+      collapsible: true,
+      items: [
+        { text: "编写第一个单元测试", link: "/pages/test/vitest/oneTest" },
+        { text: "Vitest Test Api", link: "/pages/test/vitest/api" },
+        { text: "Vitest Debug", link: "/pages/test/vitest/debug" },
+        { text: "Vitest VS Jest", link: "/pages/test/vitest/vitestVsJest" },
+        { text: "实现 mini test runner", link: "/pages/test/vitest/miniTestRunner" },
       ],
     },
     {
