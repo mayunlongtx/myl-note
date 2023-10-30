@@ -1,6 +1,8 @@
 # Vitest Test Api
 
+
 ## test
+[官方文档地址](https://vitest.dev/api/#test)
 - test.skip
 ::: warning 如果你想跳过运行某些测试，但又不想因为任何原因删除代码，你可以使用 test.skip 来避免运行它们。
 :::
@@ -31,6 +33,33 @@ test.only('test', () => {
 test.todo('unimplemented test')
 ```
 ## describe
+[官方文档地址](https://vitest.dev/api/#describe)
+
+```javascript
+// basic.spec.ts
+// organizing tests
+
+import { describe, expect, test } from 'vitest'
+
+const person = {
+  isActive: true,
+  age: 32,
+}
+
+describe('person', () => {
+  test('person is defined', () => {
+    expect(person).toBeDefined()
+  })
+
+  test('is active', () => {
+    expect(person.isActive).toBeTruthy()
+  })
+
+  test('age limit', () => {
+    expect(person.age).toBeLessThanOrEqual(32)
+  })
+})
+```
 ## 生命周期 hooks
 - beforeAll / beforeEach钩子在Vitest中可以返回拆卸函数。因此，如果它们返回的是undefined或null之外的内容，你可能需要重新编写你的钩子声明。
 ## 断言
