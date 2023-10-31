@@ -13,7 +13,30 @@ const nav = [
   // },
   {
     text: "笔记 📔",
-    link: "/pages/notes/npm/npmCommand",
+    items: [
+      {
+        text: "有道笔记",
+        items: [
+          {
+            text: "地址合集",
+            link: "https://note.youdao.com/s/9nXzzfOc",
+          },
+        ]
+      },
+      {
+        text: "其他笔记",
+        link: "/pages/notes/npm/npmCommand",
+        // items: [
+        //   {
+        //     text: "npm",
+        //     link: "/pages/notes/npm/npmCommand",
+        //   },
+        // ]
+      },
+      
+
+    ]
+    
   },
   {
     text: "我的平台",
