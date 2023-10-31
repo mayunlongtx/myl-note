@@ -25,7 +25,7 @@ const nav = [
       },
       {
         text: "其他记录",
-        link: "/pages/notes/npm/npmCommand",
+        // link: "/pages/notes/npm/npmCommand",
         items: [
           {
             text: "笔记",
