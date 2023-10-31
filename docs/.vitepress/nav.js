@@ -24,14 +24,18 @@ const nav = [
         ]
       },
       {
-        text: "其他笔记",
+        text: "其他记录",
         link: "/pages/notes/npm/npmCommand",
-        // items: [
-        //   {
-        //     text: "npm",
-        //     link: "/pages/notes/npm/npmCommand",
-        //   },
-        // ]
+        items: [
+          {
+            text: "笔记",
+            link: "/pages/notes/npm/npmCommand",
+          },
+          {
+            text: "charGpt",
+            link: "https://chat.gpt.myltx.top/",
+          },
+        ]
       },
       
 
