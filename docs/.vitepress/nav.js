@@ -32,7 +32,7 @@ const nav = [
             link: "/pages/notes/npm/npmCommand",
           },
           {
-            text: "charGpt",
+            text: "ChatGPT",
             link: "https://chat.gpt.myltx.top/",
           },
         ]
