@@ -35,6 +35,10 @@ const nav = [
             text: "ChatGPT",
             link: "https://chat.gpt.myltx.top/",
           },
+          {
+            text: "lodeChat",
+            link: "https://lodechat.myltx.top/",
+          },
         ]
       },
       
