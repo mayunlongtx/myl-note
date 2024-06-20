@@ -37,9 +37,17 @@ const sidebar = {
     },
   ],
   "/pages/notes/": [
+  {
+    text: "开发配置",
+    collapsible: true,
+    items: [
+      { text: "环境", link: "/pages/notes/my-settings/development" },
+    ],
+  },
     {
       text: "npm",
       collapsible: true,
+      collapsed: true,
       items: [
         // This shows `/learning/index.md` page.
         // { text: "Index", link: "/pages/learning/" },

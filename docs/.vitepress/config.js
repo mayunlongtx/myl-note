@@ -39,7 +39,7 @@ const config = {
     nav,
     socialLinks: [
       // pm2 start all
-      { icon: "github", link: "https://github.com/mayunlongtx/" },
+      { icon: "github", link: "https://github.com/myltx/" },
     ],
     sidebar,
   },

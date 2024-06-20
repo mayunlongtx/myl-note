@@ -1,18 +1,22 @@
 const nav = [
   {
-    text: "键盘侠养成记 🐣 ",
+    // text: "键盘侠养成记 🐣",
+    text: "键盘侠养成记",
     link: "/pages/vim/knowVim",
   },
   {
-    text: "面试题 📋 ",
+    // text: "面试题 📋",
+    text: "面试题",
     link: "/pages/learning/html",
   },
   // {
-  //   text: "测试课 📔",
-  //   link: "/pages/test/",
+  //   // text: "开发配置 📔",
+  //   text: "开发配置",
+  //   link: "/pages/notes/my-settings/development",
   // },
   {
-    text: "笔记 📔",
+    // text: "笔记 📔",
+    text: "笔记",
     items: [
       {
         text: "有道笔记",
@@ -51,7 +55,7 @@ const nav = [
     items: [
       {
         text: "Github",
-        link: "https://github.com/mayunlongtx",
+        link: "https://github.com/myltx",
       },
       {
         text: "掘金",
